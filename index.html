@@ -3,9 +3,15 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/texts.css">
+		<link rel="stylesheet" href="css/button_full_styled.css">
+		<link rel="stylesheet" href="css/banner.css">
+		<link rel="stylesheet" href="css/about.css">
+		<link rel="stylesheet" href="css/margins.css">
+		
 		<title>@LUCNS Portfolio</title>
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,23 +20,23 @@
 	</head>
 
 	<body>
-		<div class="container">
+		<div>
 		<!--
 			----------- BANNER ------------
 		-->
 		
-			<div class="banner">
-				<img class="image_banner" src="images/i.png">
+			<div class="div_banner">
+				<div class="slider_to_right_developer">
+					<h1 id="text_developer" class="text_developer text_gradient_gray">Web and Android developer</h1>
+				</div>
+				<img class="image_banner" id="image_banner" src="images/19.png">
 				<div class="div_widgets">
 					<div class="slider_to_right_star">
 						<img id="star" src="images/star2.png" width="110", height="110">
 					</div>
-					<div class="slider_to_right_developer">
-						<h2 id="text_developer" class="text_developer text_gradient_gray">Web and Android developer</h2>
-					</div>
-					<div class="div_button slider_to_right_git" id="button">
+					<div class="div_button_repositories slider_to_right_git" id="button">
 						<img class="image_button" src="images/git.png" width="24" height="24">
-						<p class="text_button">Repositórios</p>
+						<p class="text_button">Repositories</p>
 					</div>
 				</div>
 			</div>
@@ -39,10 +45,61 @@
 		<!--
 			----------- CONTENT ------------
 		-->
-			<div class="div_content">
-			
-			</div>
-		
+			<div class="div_content">	
+				<div class="div_about">
+					<h2>Um Freelancer</h2>
+					<div class="margin_left_22">
+						<p>Desde 2010 no ramo da tecnologia. 
+							Já montou uma vastidão de projetos em diversas áreas. 
+							Tanto no desenvolvimento web visando HTML, CSS, Javascript e PHP. 
+							Na plataforma Arduino, visando C e C++. 
+							Quanto no Android visando Java e XML.
+							Atualmente residindo na cidade de Maracanaú, no Ceará.
+						</p>
+					</div>
+					<h2>Alguns Projetos</h2>
+					
+					<div class="cards">
+						<div class="card margin_left_22">
+							<img class="card_image" src="images/projects/espcam4wd.jpg" />
+							<div class="card_texts">
+								<p class="center_horizontal text_12_bold margin_top_16">Março de 2023</p>
+								<h2 class="center_horizontal">Esp32-Cam 4WD</h2>
+								<p class="center_horizontal margin_top_22">Mini carrinho/robô controlado por um app desenvolvido em Java, via WiFi.</p>
+							</div>
+						</div>
+						<div class="card margin_left_22">
+							<img class="card_image" src="images/projects/float_card.jpg" />
+							<div class="card_texts">
+								<p class="center_horizontal text_12_bold margin_top_16">Junho de 2023</p>
+								<h2 class="center_horizontal">Cartão Flutuante</h2>
+								<p class="center_horizontal margin_top_22">Um app template em Java, que realiza uma animação em efeito 3d de um cartão, conforme o dispositivo é movimentado. Fazendo uso do acelerômetro.</p>
+							</div>
+						</div>
+						<div class="card margin_left_22">
+							<img class="card_image" src="images/projects/boards_confection.jpg" />
+							<div class="card_texts">
+								<p class="center_horizontal text_12_bold margin_top_16">Janeiro de 2021</p>
+								<h2 class="center_horizontal">Placas de Circuitos</h2>
+								<p class="center_horizontal margin_top_22">Aqui tem um passo a passo sobre como construir placas de circuitos em nível SMD. Sendo possível contruir trilhas com até 0.3mm de espessura.</p>
+							</div>
+						</div>
+						<div class="card margin_left_22">
+							<img class="card_image" src="images/build.jpg" />
+							<p class="building">In building progress...</p>
+						</div>
+					</div>
+				</div>
+<!--			
+				<div class="button_colorful" id="button_styled">
+					<div class="shadow_colorful"></div>
+					<div class="layer_colorful"></div>
+					<div class="layer_black">
+						<span class="text_button_default" >See Projects</span>
+					</div>
+				</div>
+				-->
+			</div>		
 		</div>
 	</body>
 </html>
