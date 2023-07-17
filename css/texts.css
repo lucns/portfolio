@@ -1,0 +1,52 @@
+h1 {
+	color: #fff;
+    font-family: Roboto;
+	font-weight: 100;
+	font-size: 42px;
+	user-select: none;
+}
+
+h2 {
+	color: #fff;
+    font-family: Roboto;
+	font-weight: 100;
+	font-size: 28px;
+	user-select: none;
+}
+
+h3 {
+	color: #ccc;
+    font-family: Roboto;
+	font-weight: 100;
+	font-size: 22px;
+	user-select: none;
+}
+
+p {	
+	text-decoration: none;
+	font-size: 16px;
+    font-family: Roboto;
+	font-weight: 300;
+	cursor: arrow;
+	user-select: none;
+	color: #aaa;
+}
+
+.text_12_bold {	
+	text-decoration: none;
+	font-size: 12px;
+    font-family: Roboto;
+	font-weight: 700;
+	cursor: arrow;
+	user-select: none;
+	color: #aaa;
+}
+
+.text_buttons {	
+	text-decoration: none;
+	font-size: 14px;
+    font-family: Roboto;
+	font-weight: 700;
+	cursor: arrow;
+	user-select: none;
+}

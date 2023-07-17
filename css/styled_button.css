@@ -1,0 +1,97 @@
+
+
+.layer_black {
+	position: absolute;
+	width: 150px;
+	height: 40px;
+	background: #000;
+	border: none;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #aaa;
+	transition-duration: 0.25s;
+}
+
+.layer_black:hover {
+	background: rgba(32, 32, 32, 0.5);
+	color: #000;
+	transition-duration: 0.25s;
+}
+
+.layer_colorful {
+	position: absolute;
+	width: 150px;
+	height: 40px;
+	border: none;
+	border-radius: 10px;
+	background: linear-gradient(
+		45deg,
+		#002bff,
+		#7a00ff,
+		#ff00c8,
+		#7a00ff
+	);
+	background-size: 400% 400%;
+	filter: blur(1px);
+	-webkit-filter: blur(1px);
+	animation: glowing_animation 60s linear infinite;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.button_colorful {
+	width: 150px;
+	height: 40px;
+	border: none;
+	color: #fff;
+}
+
+.button_colorful:hover {
+	color: #000;
+}
+
+.shadow_colorful {
+	padding: 0.6em 2em;
+	border: none;
+	outline: none;
+	z-index: 0;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	position: absolute;
+}
+
+.shadow_colorful:before {
+	content: "";
+	background: linear-gradient(
+		45deg,
+		#002bff,
+		#7a00ff,
+		#ff00c8,
+		#7a00ff
+	);
+	filter: blur(50px);
+	-webkit-filter: blur(50px);
+	animation: glowing_animation 60s linear infinite;
+	background-size: 400%;
+	z-index: -1;
+	width: 150px;
+	height: 40px;
+	position: absolute;
+	margin-left: -37px;
+	left: 50%;
+}
+
+@keyframes glowing_animation {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}

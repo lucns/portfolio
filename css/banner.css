@@ -1,0 +1,141 @@
+.div_banner {
+	position: relative;
+	max-width:100%;
+	height: auto;
+}
+
+.image_banner {
+	max-width:100%;
+	height: auto;
+}
+
+.div_widgets {
+	width:50%;
+	position: absolute;
+	top: 10%;
+	left: 3%;
+	transform: translate(0%, 0%);
+}
+
+.text_developer {
+	position: fixed;
+	top: 200px;
+	left: 3%;
+	transform: translate(0%, 0%);
+}
+
+.text_button {
+	position: absolute;
+	top: 10%;
+	left: 35%;
+	transform: translateY(-50%);
+	
+	text-decoration: none;
+	font-size: 14px;
+    font-family: Roboto;
+	font-weight: 300;
+	cursor: arrow;
+	user-select: none;
+}
+
+.image_button {
+	position: absolute;
+	left: 10%;
+	top: 50%;
+	transform: translateY(-50%);
+	user-select: none;
+}
+
+.div_button_repositories {	
+	position: absolute;
+	width: 150px;
+	height: 36px;
+	background-color: transparent;
+	border: none;
+	border-radius: 10px;
+	color: #888888;
+	display: inline;
+    font-family: Roboto;
+	font-weight: 700;
+}
+
+.div_button_repositories:hover {
+	color: #ffffff;
+	background: linear-gradient(90deg, #181818, transparent) #484848;
+	transition-duration: 0.25s;
+}
+
+.div_button_repositories:active {
+	color: #70b0db;
+	background: linear-gradient(90deg, #351245, transparent) #ae00ff;
+	transition-duration: 0s;
+}
+
+/* ------------------ banner animations ------------------ */
+
+.slider_to_right_star {
+	animation: slider_to_right_star 1s ease 200ms backwards;
+}
+
+@keyframes slider_to_right_star {
+ from {
+  opacity: 0;
+  transform: translateY(-100px);
+ }
+ to {
+  opacity: 1;
+  transform: translate(0px);
+ }
+}
+
+.slider_to_right_developer {
+	animation: slider_to_right_developer 2s ease 200ms backwards;
+}
+
+@keyframes slider_to_right_developer {
+ from {
+  opacity: 0;
+  transform: translateX(-600px);
+ }
+ to {
+  opacity: 1;
+  transform: translate(0px);
+ }
+}
+
+.slider_to_right_git {
+	animation: slider_to_right_git 1s ease 200ms backwards;
+}
+
+@keyframes slider_to_right_git {
+ from {
+  opacity: 0;
+  transform: translateX(-200px);
+ }
+ to {
+  opacity: 1;
+  transform: translate(0px);
+ }
+}
+
+.text_gradient_gray {
+  text-align: center;
+  
+  background: linear-gradient(to right, #FFF 20%, #666 40%, #666 60%, #FFF 80%);
+  background-size: 200% auto;
+  
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  animation: text_gradient_gray 5s linear infinite;
+  
+}
+
+@keyframes text_gradient_gray {
+    to {
+		background-position: 200% center;
+    }
+}

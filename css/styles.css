@@ -1,168 +1,43 @@
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.25);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 body {
 	height: 1000vh;
 	transition: background 1s ease;
 	margin: 0 !important;
 	padding: 0 !important;
+	background-image: url("../images/AndroidStudio.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
-.container {
+.center_horizontal {
+	padding: 0;
+	margin: 0;
 	width: 100%;
-	height: auto;
+	text-align: center;
 }
-
-/* ------------------- content ------------------- */
 
 .div_content {
 	width: 100%;
-	height: 200px;
+	height: 500px;
 	margin: 0;
-	padding: 0
-}
-
-/* --------------- end content ---------------- */
-
-/* ------------------ banner ------------------ */
-
-.banner {
-	position: relative;
-	max-width:100%;
-	height: auto;
-}
-
-.image_banner {
-	max-width:100%;
-	height: auto;
-}
-
-.div_widgets {
-	position: absolute;
-	top: 10%;
-	left: 5%;
-	transform: translate(0%, 0%);
-}
-
-.text_developer {
-	color: #ffffff;
-    font-family: Roboto;
-	font-weight: 100;
-	font-size: 42px;
-	user-select: none;
-}
-
-.text_button {
-	position: absolute;
-	top: 10%;
-	left: 35%;
-	transform: translateY(-50%);
-	
-	text-decoration: none;
-	font-size: 14px;
-    font-family: Roboto;
-	font-weight: 300;
-	cursor: arrow;
-	user-select: none;
-}
-
-.image_button {
-	position: absolute;
-	left: 10%;
-	top: 50%;
-	transform: translateY(-50%);
-	user-select: none;
-}
-
-.div_button {	
-	position: absolute;
-	width: 150px;
-	height: 36px;
-	background-color: transparent;
-	border: none;
-	border-radius: 4px;
-	color: #888888;
-	display: inline
-}
-
-.div_button:hover {
-	color: #ffffff;
-	background: linear-gradient(90deg, #181818, transparent) #484848;
-	transition-duration: 0.25s;
-    font-family: Roboto;
-	font-weight: 700;
-}
-
-.div_button:active {
-	color: #70b0db;
-	background-color: #3376a3;
-	transition-duration: 0.1s;
-    font-family: Roboto;
-	font-weight: 700;
-}
-
-/* ------------------ banner animations ------------------ */
-
-.slider_to_right_star {
-	animation: slider_to_right_star 1s ease 200ms backwards;
-}
-
-@keyframes slider_to_right_star {
- from {
-  opacity: 0;
-  transform: translateY(-100px);
- }
- to {
-  opacity: 1;
-  transform: translate(0px);
- }
-}
-
-.slider_to_right_developer {
-	animation: slider_to_right_developer 2s ease 200ms backwards;
-}
-
-@keyframes slider_to_right_developer {
- from {
-  opacity: 0;
-  transform: translateX(-600px);
- }
- to {
-  opacity: 1;
-  transform: translate(0px);
- }
-}
-
-.slider_to_right_git {
-	animation: slider_to_right_git 1s ease 200ms backwards;
-}
-
-@keyframes slider_to_right_git {
- from {
-  opacity: 0;
-  transform: translateX(-200px);
- }
- to {
-  opacity: 1;
-  transform: translate(0px);
- }
-}
-
-.text_gradient_gray {
-  text-align: center;
-  
-  background: linear-gradient(to right, #FFF 20%, #666 40%, #666 60%, #FFF 80%);
-  background-size: 200% auto;
-  
-  color: #000;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  
-  animation: text_gradient_gray 5s linear infinite;
-  
-}
-
-@keyframes text_gradient_gray {
-    to {
-		background-position: 200% center;
-    }
+	padding: 0;
 }
