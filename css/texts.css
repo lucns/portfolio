@@ -32,6 +32,26 @@ p {
 	color: #aaa;
 }
 
+.text_20 {
+	text-decoration: none;
+	font-size: 20px;
+    font-family: Roboto;
+	font-weight: 100;
+	cursor: arrow;
+	user-select: none;
+	color: #ccc;
+}
+
+.text_14 {
+	text-decoration: none;
+	font-size: 14px;
+    font-family: Roboto;
+	font-weight: 400;
+	cursor: arrow;
+	user-select: none;
+	color: #aaa;
+}
+
 .text_12_bold {	
 	text-decoration: none;
 	font-size: 12px;
